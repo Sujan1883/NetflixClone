@@ -1,0 +1,35 @@
+.player {
+    height: 100vh; /* Set to full viewport height */
+    display: flex;
+    flex-direction: column; /* Column direction to align elements vertically */
+    justify-content: center;
+    align-items: center;
+    width: 100vw; /* Set to full viewport width */
+    position: relative;
+}
+
+.player img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    cursor: pointer;
+    z-index: 10; /* Ensure the back arrow is on top of other elements */
+}
+
+.player iframe {
+    border-radius: 10px;
+    width: 80vw; /* Adjust width to your preference */
+    height: 45vw; /* Maintain aspect ratio for 16:9 */
+    max-width: 1000px; /* Optional: Maximum width constraint */
+    max-height: 562.5px; /* Optional: Maximum height constraint to maintain 16:9 ratio */
+}
+
+.player-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-top: 20px;
+}
